@@ -12,7 +12,7 @@
         bottom: 15%;
     }
 
-    #contact>img{
+    #contact>img {
         width: 44vw;
     }
 
@@ -29,47 +29,78 @@
 
 /* Laptop */
 @media (max-width: 1199px) {
-    #contact{
+    #contact {
         flex-direction: row;
         align-items: flex-end;
     }
 
-    #contact > div{
+    #contact>div {
         padding-top: 0;
     }
 
-    #contact>img{
+    #contact>img {
         width: 44vw;
         height: auto;
         padding-right: 0;
     }
 
-    #contact > div > div{
+    #contact>div>div {
         margin: 4em 3em 0em 3em;
     }
 
     #contact>div>div>p {
-        font-size: 3vw;
+        font-size: 2.6vw;
     }
 
     #socialButtons img {
         height: 2em;
     }
 
-    .Menu-list{
+    .Menu-list {
         font-size: 2.5em;
     }
 
-    #Menu{
+    #Menu {
         width: 40%;
     }
 
+    .scrollDown>img {
+        width: 2%;
+        height: auto;
+    }
+
     /* SERVICES*/
+
+    .infinityWrapper>p {
+        font-size: 3em;
+        animation-duration: 15s;
+    }
+
+    #servicesContainer>div>.service>.serviceText>div>p {
+        line-height: 1.25em;
+    }
+
+    /*Ecosystem*/
+
+    #ecoContainer .ecoItem > img {
+        min-width: 10em;
+        max-height: 10em;
+        max-width: 10em;
+        min-height: 10em;
+    }
+
+    #ecoContainer .ecoItem > .textContainer{
+        padding: 2em 1.5em 3em;
+    }
+    
+    #ecoContainer > div{
+        gap: 4em;
+    }
 }
 
 /* Tablets*/
 @media (max-width: 991px) {
-    #contact{
+    #contact {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
@@ -82,50 +113,61 @@
         height: 1.7em;
     }
 
-    #contact>img{
+    #contact>img {
         height: 50vh;
         width: auto;
         padding: 0 2em;
     }
 
-    #contact > div > div{
+    #contact>div>div {
         margin: 3em 4em 0em 4em;
     }
 
-    .Menu-list{
+    .Menu-list {
         font-size: 3em;
         justify-content: center;
     }
 
-    #Menu{
+    #Menu {
         width: 100%;
     }
 
-    /* SERVICES*/
+    /*Ecosystem*/
+
+    #ecoContainer .ecoItem > img {
+        min-width: 8em;
+        max-height: 8em;
+        max-width: 8em;
+        min-height: 8em;
+    }
+
+    #ecoContainer > div{
+        padding: 50vh 14% 10vh;
+    }
 }
 
 /* Smartphones horizontal*/
 @media (max-width: 767px) {
-    #navContainer h1{
+    #navContainer h1 {
         font-size: 0.75em;
     }
 
-    footer>a>h3{
+    footer>a>h3 {
         font-size: 0.5em;
         letter-spacing: 0px;
     }
 
-    .socials>a>img{
+    .socials>a>img {
         padding-right: 0.3em;
     }
 
-    #contact>img{
+    #contact>img {
         width: 48vw;
         height: auto;
         padding: 0em 2em;
     }
 
-    #contact > div > div{
+    #contact>div>div {
         margin: 2em 2em 0em 2em;
     }
 
@@ -138,29 +180,50 @@
         margin: 0.5em 0.25em;
     }
 
-    #contact{
+    #contact {
         flex-direction: row;
         align-items: flex-end;
     }
 
-    .Menu-list{
+    .Menu-list {
         font-size: 1.5em;
     }
 
-    #Menu{
+    #Menu {
         width: 50%;
     }
+
     /* SERVICES*/
+
+    .infinityWrapper>p {
+        font-size: 2em;
+        animation-duration: 12s;
+    }
+
+    /*Ecosystem*/
+
+    #ecoContainer .ecoItem > .textContainer{
+        padding: 1.5em 1.5em 2em;
+    }
+    
+    #ecoContainer > div{
+        gap: 4em;
+        padding: 60vh 14% 10vh;
+    }
+
+    #ecoContainer .ecoItem{
+        border-radius: 25px;
+    }
 }
 
 /* Smartphones*/
 @media (max-width: 575px) {
-    #contact{
+    #contact {
         flex-direction: column-reverse;
         align-items: flex-start;
     }
 
-    #contact>div{
+    #contact>div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -175,99 +238,118 @@
         margin: 0.5em 0.4em;
     }
 
-    #contact>img{
+    #contact>img {
         width: 100vw;
 
         padding: 0em 2em;
     }
 
-    #navContainer h1{
+    #navContainer h1 {
         font-size: 1em;
     }
 
-    #navContainer{
+    #navContainer {
         height: 6vh;
     }
 
-    #headerBackground{
+    #headerBackground {
         height: 6vh;
     }
 
-    #logo > svg {
+    #logo>svg {
         height: 12vh;
         width: 12vw;
     }
 
-    footer>a>h3{
+    footer>a>h3 {
         font-size: 1.5em;
         letter-spacing: 0px;
         padding-left: 14px;
     }
 
-    footer>h3{
+    footer>h3 {
         display: none;
     }
 
-    .socials>a>img{
+    .socials>a>img {
         padding-right: 0.75em;
         height: 1.25em;
     }
 
-    #Menu{
+    #Menu {
         width: 100%;
     }
 
-    .Menu-list{
+    .Menu-list {
         padding: 0em 1em;
     }
 
-    .scrollDown>img{
+    .scrollDown>img {
         width: 6%;
         height: auto;
     }
 
     /* SERVICES*/
 
-    .infinityWrapper > p{
-        font-size: 2em;
-        animation-duration: 12s;
-    }
-
     #servicesContainer>div>.service {
-        flex-direction: column-reverse!important;
+        flex-direction: column-reverse !important;
         padding: 2em;
     }
 
-    #servicesContainer>div>.service>img{
+    #servicesContainer>div>.service>img {
         height: auto;
         width: 100%;
-        margin: 3em 0;
+        margin: 3em 0 !important;
     }
 
-    #servicesContainer>div>.service>.serviceText>div>p{
+    #servicesContainer>div>.service>.serviceText>div>p {
         text-align: center;
-        font-size: 0.8em;
+        font-size: 0.5em;
         line-height: 1.25em;
     }
 
-    #servicesContainer>div>.service>.serviceText>div>h2{
+    #servicesContainer>div>.service>.serviceText>div>h2 {
         text-align: center;
-        font-size: 2em;
+        font-size: 10vw;
+        margin-left: 0 !important;
     }
 
-    #Raffles ~ .serviceText > div > h2{
-        font-size: 1.1em!important;
+    #Raffles~.serviceText>div>h2 {
+        font-size: 5vw !important;
+    }
+
+    #Dealer~.serviceText>div>h2 {
+        font-size: 10vw !important;
+    }
+
+    #Art~.serviceText>div>h2 {
+        font-size: 8vw !important;
+    }
+
+    #Minting~.serviceText>div>h2 {
+        font-size: 15vw !important;
+    }
+
+    /*Ecosystem*/
+
+    #ecoContainer > img {
+        padding: 10vh 0;
+    }
+
+    #ecoContainer .ecoItem > img {
+        min-width: 6em;
+        max-height: 6em;
+        max-width: 6em;
+        min-height: 6em;
+        padding: 0.75em 0em 0.75em 0.75em;
+    }
+
+    #ecoContainer .ecoItem > .textContainer{
+        padding: 1em 1em 1.5em 0.75em;
     }
     
-    #Dealer ~ .serviceText > div > h2{
-        font-size: 2em!important;
-    }
-    
-    #Art ~ .serviceText > div > h2{
-        font-size: 1.5em!important;
-    }
-    
-    #Minting ~ .serviceText > div > h2{
-        font-size: 2em!important;
+    #ecoContainer > div{
+        gap: 2em;
+        padding: 24vh 14% 5vh;
     }
 }
