@@ -1,0 +1,19 @@
+{
+  "name": "44labswebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/HTML/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrashyRicca/44LabsWebsiteFinal.git"
+  },
+  "author": "Ricca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrashyRicca/44LabsWebsiteFinal/issues"
+  },
+  "homepage": "https://github.com/TrashyRicca/44LabsWebsiteFinal#readme"
+}
