@@ -68,7 +68,7 @@ $(document).ready(function () {
         $("#collection2>h2").animate({
             opacity: 0
         }, 300, function () {
-            $("#collection2>h2").css({"font-size": "2.2em","width": "100%"});
+            $("#collection2>h2").css({"width": "100%"});
             $("#collection2>h2").text("Our second NFT collection, taking place in the Interdimension. Recently there has been a rift between our reality and the Interdimensional one and some magical beings have been seen watching NYC carefully from the sky, some even claim to have made contact with them.");
             $("#collection2>h2").animate({
                 opacity: 1
@@ -84,7 +84,7 @@ $(document).ready(function () {
         $("#collection2>h2").animate({
             opacity: 0
         }, 200, function () {
-            $("#collection2>h2").css({"font-size": "5em","width": "auto"});
+            $("#collection2>h2").css({"width": "auto"});
             $("#collection2>h2").text("IM");
             $("#collection2>h2").animate({
                 opacity: 1

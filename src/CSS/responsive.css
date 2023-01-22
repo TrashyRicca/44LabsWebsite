@@ -363,24 +363,30 @@
 
     .textPage1 {
         width: 100%;
-        padding-bottom: 5%;
+        padding: 5%;
         align-items: center;
+        text-align: center;
     }
 
     .textPage1 h1{
-        font-size: 15vw;
+        font-size: 18vw;
+    }
+
+    .textPage1>div{
+        transform: translate(0, 0)!important;
     }
 
     .introduction p{
-        font-size: 2.3vw;
+        font-size: 3vw;
     }
+
 
     .imagePage1{
         position:inherit;
     }
 
     .servicesIntro>.textPage2{
-        font-size: 2.75vw;
+        font-size: 3vw;
     }
 
     .servicesIntro{
@@ -388,11 +394,19 @@
     }
 
     .servicesIntro>svg{
-        right: -3vh;
+        right: -5vh;
+    }
+
+    .servicesIntro>.textPage2{
+        width: 80%;
     }
 
     #collectionShowcaseContainer>div{
-        height: 10vh;
+        height: 20vh;
+    }
+
+    #collectionShowcaseContainer>div>h2{
+        font-size:7em;
     }
 
     #team>div>img{
