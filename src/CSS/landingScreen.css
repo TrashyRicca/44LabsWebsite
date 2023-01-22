@@ -108,17 +108,16 @@
 	}
 }
 
-@media not all and (min-resolution: 0.001dpcm) {
-	#fadeOutContainer {
-		display: none;
-	}
 
-	#lSHeaderContainer {
-		display: none;
-	}
+#fadeOutContainer {
+	display: none;
+}
 
-	#landingScreen {
-		height: 8vh;
-		position: relative;
-	}
+#lSHeaderContainer {
+	display: none;
+}
+
+#landingScreen {
+	height: 8vh;
+	position: relative;
 }

@@ -289,7 +289,7 @@
     }
 
     .scrollDown>img {
-        width: 6%;
+        width: 3%;
         height: auto;
     }
 
@@ -363,6 +363,8 @@
 
     .textPage1 {
         width: 100%;
+        padding-bottom: 5%;
+        align-items: center;
     }
 
     .textPage1 h1{
@@ -370,10 +372,31 @@
     }
 
     .introduction p{
-        .introduction p
+        font-size: 2.3vw;
     }
 
     .imagePage1{
         position:inherit;
+    }
+
+    .servicesIntro>.textPage2{
+        font-size: 2.75vw;
+    }
+
+    .servicesIntro{
+        height: auto;
+    }
+
+    .servicesIntro>svg{
+        right: -3vh;
+    }
+
+    #collectionShowcaseContainer>div{
+        height: 10vh;
+    }
+
+    #team>div>img{
+        width: 22%;
+        height: auto;
     }
 }
