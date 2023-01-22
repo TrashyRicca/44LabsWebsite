@@ -34,7 +34,7 @@ $(document).ready(function () {
         $("#collection1>h2").animate({
             opacity: 0
         }, 300, function () {
-            $("#collection1>h2").css({"font-size": "2.2em","width": "100%"});
+            $("#collection1>h2").css({"width": "100%"});
             $("#collection1>h2").text("Our first NFT collection where we combine community, art, designs, branding and utility. The Mous love to vibe, hanging out, drinking and smoking at the NYC subway stations, especially the one on the 44th Street. Recently there has been a golden potion flooding the streets, making those MAD that drink it. The Mad Mous are enhanced and some say they will soon be taking over.");
             $("#collection1>h2").animate({
                 opacity: 1
@@ -50,7 +50,7 @@ $(document).ready(function () {
         $("#collection1>h2").animate({
             opacity: 0
         }, 200, function () {
-            $("#collection1>h2").css({"font-size": "5em","width": "auto"});
+            $("#collection1>h2").css({"width": "auto"});
             $("#collection1>h2").text("MIDH");
             $("#collection1>h2").animate({
                 opacity: 1
