@@ -53,6 +53,7 @@
 
 #madSVG {
 	height: 90%;
+	max-width: 90%;
 	width: auto;
 	padding-bottom: 1%;
 	padding-right: 3%;

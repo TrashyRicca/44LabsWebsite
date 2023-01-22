@@ -10,6 +10,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 0.8vw;
 }
 
 .introduction {
@@ -34,9 +35,12 @@ header {
 	position: relative;
 }
 
-.textPage1 h1:first-child {
+.textPage1  h1{
 	font-size: 12em;
 	letter-spacing: 0.04em;
+}
+
+.textPage1 h1:first-child {
 	background-image: linear-gradient(91.92deg, #d47efc 4.14%, #dfa0ff 26.5%, #d47efc 48.86%, #da95fd 67.9%, #d47efc 83.64%);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -44,8 +48,6 @@ header {
 }
 
 #shadow {
-	font-size: 12em;
-	letter-spacing: 0.04em;
 	z-index: -1;
 	position: absolute;
 	top: 0;
@@ -275,14 +277,14 @@ header {
 	height: 35vh;
 	padding-right: 2%;
 	transition-duration: 0.25s;
-	transform-origin: bottom;
+	transform-origin: right bottom;
 	-webkit-filter: drop-shadow(0px 0px 10px var(--accent));
 	filter: drop-shadow(0px 0px 10px var(--accent));
 }
 
 
 .scale11 {
-	transform: scale(1.15);
+	transform: scale(1.1);
 	-webkit-filter: drop-shadow(0px 0px 15px var(--accent-50)) !important;
 	filter: drop-shadow(0px 0px 15px var(--accent-50)) !important;
 }
