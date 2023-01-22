@@ -189,7 +189,6 @@ header {
 	position: absolute;
 	overflow: hidden;
 	color: var(--white);
-	letter-spacing: 2px;
 	top: 0;
 	height: 50%;
 	transition: all 0.5s cubic-bezier(0.16, 1.08, 0.38, 0.98);

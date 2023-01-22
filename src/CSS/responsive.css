@@ -23,13 +23,15 @@
     #contact>div>div>p {
         font-size: 2.7vw;
     }
+
+    /* SERVICES*/
 }
 
 /* Laptop */
 @media (max-width: 1199px) {
     #contact{
-        flex-direction: column-reverse;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: flex-end;
     }
 
     #contact > div{
@@ -37,26 +39,36 @@
     }
 
     #contact>img{
-        height: 45vh;
-        width: auto;
+        width: 44vw;
+        height: auto;
+        padding-right: 0;
     }
 
     #contact > div > div{
-        margin: 5em 5em 0em 5em;
+        margin: 4em 3em 0em 3em;
     }
 
     #contact>div>div>p {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     #socialButtons img {
-        height: 2.5em;
+        height: 2em;
     }
+
+    .Menu-list{
+        font-size: 2.5em;
+    }
+
+    #Menu{
+        width: 40%;
+    }
+
+    /* SERVICES*/
 }
 
 /* Tablets*/
 @media (max-width: 991px) {
-
     #contact{
         flex-direction: column-reverse;
         align-items: flex-start;
@@ -72,12 +84,24 @@
 
     #contact>img{
         height: 50vh;
+        width: auto;
         padding: 0 2em;
     }
 
     #contact > div > div{
-        margin: 3em 4em 0em 0em;
+        margin: 3em 4em 0em 4em;
     }
+
+    .Menu-list{
+        font-size: 3em;
+        justify-content: center;
+    }
+
+    #Menu{
+        width: 100%;
+    }
+
+    /* SERVICES*/
 }
 
 /* Smartphones horizontal*/
@@ -102,7 +126,7 @@
     }
 
     #contact > div > div{
-        margin: 2em 2em 0em 1em;
+        margin: 2em 2em 0em 2em;
     }
 
     #contact>div>div>p {
@@ -118,6 +142,15 @@
         flex-direction: row;
         align-items: flex-end;
     }
+
+    .Menu-list{
+        font-size: 1.5em;
+    }
+
+    #Menu{
+        width: 50%;
+    }
+    /* SERVICES*/
 }
 
 /* Smartphones*/
@@ -149,7 +182,7 @@
     }
 
     #navContainer h1{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     #navContainer{
@@ -161,8 +194,8 @@
     }
 
     #logo > svg {
-        height: 15vh;
-        width: 15vw;
+        height: 12vh;
+        width: 12vw;
     }
 
     footer>a>h3{
@@ -185,12 +218,56 @@
     }
 
     .Menu-list{
-        align-items: flex-end;
-        justify-content: center;
         padding: 0em 1em;
     }
 
-    .Mask{
-        letter-spacing: 0px;
+    .scrollDown>img{
+        width: 6%;
+        height: auto;
+    }
+
+    /* SERVICES*/
+
+    .infinityWrapper > p{
+        font-size: 2em;
+        animation-duration: 12s;
+    }
+
+    #servicesContainer>div>.service {
+        flex-direction: column-reverse!important;
+        padding: 2em;
+    }
+
+    #servicesContainer>div>.service>img{
+        height: auto;
+        width: 100%;
+        margin: 3em 0;
+    }
+
+    #servicesContainer>div>.service>.serviceText>div>p{
+        text-align: center;
+        font-size: 0.8em;
+        line-height: 1.25em;
+    }
+
+    #servicesContainer>div>.service>.serviceText>div>h2{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    #Raffles ~ .serviceText > div > h2{
+        font-size: 1.1em!important;
+    }
+    
+    #Dealer ~ .serviceText > div > h2{
+        font-size: 2em!important;
+    }
+    
+    #Art ~ .serviceText > div > h2{
+        font-size: 1.5em!important;
+    }
+    
+    #Minting ~ .serviceText > div > h2{
+        font-size: 2em!important;
     }
 }
