@@ -35,8 +35,8 @@ header {
 	position: relative;
 }
 
-.textPage1  h1{
-	font-size: 12em;
+.textPage1 h1 {
+	font-size: 10vw;
 	letter-spacing: 0.04em;
 }
 
@@ -58,7 +58,7 @@ header {
 
 .textPage1 p {
 	width: 85%;
-	font-size: 2.2em;
+	font-size: 1.7vw;
 	color: var(--black);
 }
 
@@ -347,18 +347,16 @@ header {
 	}
 }
 
-@media not all and (min-resolution:.001dpcm) {
-	@supports (-webkit-appearance:none) {
-		#homepage {
-			transform: translate(0, 0vh);
-			-webkit-transform: translate(0, 0vh);
-			-moz-transform: translate(0, 0vh);
-			-ms-transform: translate(0, 0vh);
-			-o-transform: translate(0, 0vh);
-		}
+@media not all and (min-resolution: 0.001dpcm) {
+	#homepage {
+		transform: translate(0, 0vh);
+		-webkit-transform: translate(0, 0vh);
+		-moz-transform: translate(0, 0vh);
+		-ms-transform: translate(0, 0vh);
+		-o-transform: translate(0, 0vh);
+	}
 
-		.servicesIntro {
-			backdrop-filter: opacity(92.5%) blur(5px) brightness(6%) saturate(2000%) hue-rotate(10deg);
-		}
+	.servicesIntro {
+		backdrop-filter: opacity(92.5%) blur(5px) brightness(6%) saturate(2000%) hue-rotate(10deg);
 	}
 }

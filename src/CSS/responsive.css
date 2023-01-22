@@ -356,4 +356,24 @@
         gap: 2em;
         padding: 24vh 14% 5vh;
     }
+
+    .introduction{
+        height: auto;
+    }
+
+    .textPage1 {
+        width: 100%;
+    }
+
+    .textPage1 h1{
+        font-size: 15vw;
+    }
+
+    .introduction p{
+        .introduction p
+    }
+
+    .imagePage1{
+        position:inherit;
+    }
 }
