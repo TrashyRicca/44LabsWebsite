@@ -7,17 +7,19 @@ let currentTilt = [];
 let mousXt = 0;
 let mousYt = 0;
 
-$(document).ready(function() {
-	document.body.addEventListener("mousemove", safeMousPost);
-	mouseTiltObjects = document.getElementsByClassName("mousAnimTilt");
-	tiltPercent = [mouseTiltObjects.length];
-	currentTilt = [mouseTiltObjects.length];
-	for (var i = 0; i < mouseTiltObjects.length; i++) {
-		currentTilt[i] = [0, 0];
-	}
+$(document).ready(function () {
+	if (!(/^((?!chrome|android).)*safari/i.test(navigator.userAgent))) {
+		document.body.addEventListener("mousemove", safeMousPost);
+		mouseTiltObjects = document.getElementsByClassName("mousAnimTilt");
+		tiltPercent = [mouseTiltObjects.length];
+		currentTilt = [mouseTiltObjects.length];
+		for (var i = 0; i < mouseTiltObjects.length; i++) {
+			currentTilt[i] = [0, 0];
+		}
 
-	timeStampt = Date.now();
-	window = setInterval(animatet, 10);
+		timeStampt = Date.now();
+		window = setInterval(animatet, 10);
+	}
 });
 
 function animatet() {

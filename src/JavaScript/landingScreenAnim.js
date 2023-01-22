@@ -1,6 +1,6 @@
 let landed = false;
 $(document).ready(function () {
-	if (!(navigator.userAgent.toLowerCase().indexOf('firefox') > -1)) {
+	if (!((navigator.userAgent.toLowerCase().indexOf('firefox') > -1) || (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)))) {
 		var dashOffset = parseInt($("#madSVG>g>path:first-child").css("stroke-dashoffset"), 10);
 		var scrollDistance = 1000;
 		var scrollDistance2 = 400;

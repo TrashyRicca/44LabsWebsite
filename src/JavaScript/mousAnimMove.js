@@ -7,17 +7,19 @@ let currentPosition = [];
 let mousX = 0;
 let mousY = 0;
 
-$(document).ready(function() {
-	document.body.addEventListener("mousemove", safeMousPos);
-	mouseMoveObjects = document.getElementsByClassName("mousAnimMove");
-	distancePercent = [mouseMoveObjects.length];
-	currentPosition = [mouseMoveObjects.length];
-	for (var i = 0; i < mouseMoveObjects.length; i++) {
-		currentPosition[i] = [0, 0];
-	}
+$(document).ready(function () {
+	if (!(/^((?!chrome|android).)*safari/i.test(navigator.userAgent))) {
+		document.body.addEventListener("mousemove", safeMousPos);
+		mouseMoveObjects = document.getElementsByClassName("mousAnimMove");
+		distancePercent = [mouseMoveObjects.length];
+		currentPosition = [mouseMoveObjects.length];
+		for (var i = 0; i < mouseMoveObjects.length; i++) {
+			currentPosition[i] = [0, 0];
+		}
 
-	timeStamp = Date.now();
-	window = setInterval(animate, 10);
+		timeStamp = Date.now();
+		window = setInterval(animate, 10);
+	}
 });
 
 function animate() {

@@ -21,6 +21,23 @@
 	}
 }
 
+@media not all and (min-resolution:.001dpcm) {
+	@supports (-webkit-appearance:none) {
+		#fadeOutContainer {
+			display: none;
+		}
+	
+		#lSHeaderContainer {
+			display: none;
+		}
+	
+		#landingScreen {
+			height: 8vh;
+			position: relative;
+		}
+	}
+}
+
 #fadeOutContainer {
 	position: relative;
 	transition-timing-function: ease-in-out;

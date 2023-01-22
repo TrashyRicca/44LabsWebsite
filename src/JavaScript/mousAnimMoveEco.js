@@ -7,17 +7,19 @@ let currentPosition = [];
 let mousX = 0;
 let mousY = 0;
 
-$(document).ready(function() {
-	document.body.addEventListener("mousemove", safeMousPos);
-	mouseMoveObjects = document.getElementsByClassName("mousAnimMove");
-	distancePercent = [mouseMoveObjects.length];
-	currentPosition = [mouseMoveObjects.length];
-	for (var i = 0; i < mouseMoveObjects.length; i++) {
-		currentPosition[i] = [0, 0];
-	}
+$(document).ready(function () {
+	if (!(/^((?!chrome|android).)*safari/i.test(navigator.userAgent))) {
+		document.body.addEventListener("mousemove", safeMousPos);
+		mouseMoveObjects = document.getElementsByClassName("mousAnimMove");
+		distancePercent = [mouseMoveObjects.length];
+		currentPosition = [mouseMoveObjects.length];
+		for (var i = 0; i < mouseMoveObjects.length; i++) {
+			currentPosition[i] = [0, 0];
+		}
 
-	timeStamp = Date.now();
-	window = setInterval(animate, 10);
+		timeStamp = Date.now();
+		window = setInterval(animate, 10);
+	}
 });
 
 function animate() {
@@ -27,7 +29,7 @@ function animate() {
 		currentElement = mouseMoveObjects.item(i);
 		distancePercent[i] = getdistancePercent(currentElement);
 		var moveTo = [Math.max(Math.min((currentPosition[i][0] + ((distancePercent[i][0] * maxDistance - currentPosition[i][0]) * speed * timeFrame)), maxDistance), -maxDistance), Math.max(Math.min((currentPosition[i][1] + ((distancePercent[i][1] * maxDistance - currentPosition[i][1]) * speed * timeFrame)), maxDistance), -maxDistance)]
-		currentElement.style.transform = "translate(" + (moveTo[0]-$("#ecoContainer>img").width()/2) + "px," + moveTo[1] + "px)";
+		currentElement.style.transform = "translate(" + (moveTo[0] - $("#ecoContainer>img").width() / 2) + "px," + moveTo[1] + "px)";
 		currentPosition[i] = [moveTo[0], moveTo[1]];
 	}
 }

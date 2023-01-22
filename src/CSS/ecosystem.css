@@ -1,4 +1,4 @@
-#acoContainer{
+#ecoContainer{
     overflow: hidden;
     position: relative;
 }
@@ -60,7 +60,7 @@
 
 #ecoContainer .ecoItem>.textContainer>h2 {
     padding-bottom: 0.25em;
-    font-size: 3vw;
+    font-size: 2.39vw;
     background: linear-gradient(91.92deg, #D7A4FF 4.14%, #CA89FD 26.5%, #CF93FF 48.86%, #CA89FD 67.9%, #D49DFF 83.64%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

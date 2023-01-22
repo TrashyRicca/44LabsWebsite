@@ -78,8 +78,8 @@ $(document).ready(function() {
 			doCooldown();
 		}
 	}
-
-	if(!(navigator.userAgent.toLowerCase().indexOf('firefox') > -1)){
+	
+	if (!((navigator.userAgent.toLowerCase().indexOf('firefox') > -1) || (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)))) {
         animate();
     }
 });
