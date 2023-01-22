@@ -1,0 +1,108 @@
+#landingScreen {
+	pointer-events: none;
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	z-index: 9;
+}
+
+@-moz-document url-prefix() {
+	#fadeOutContainer {
+		display: none;
+	}
+
+	#lSHeaderContainer {
+		display: none;
+	}
+
+	#landingScreen {
+		height: 8vh;
+		position: relative;
+	}
+}
+
+#fadeOutContainer {
+	position: relative;
+	transition-timing-function: ease-in-out;
+	background-color: var(--black);
+	width: 100%;
+	height: 100%;
+}
+
+#fadeOutContainer img {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+#madSVG {
+	height: 90%;
+	width: auto;
+	padding-bottom: 1%;
+	padding-right: 3%;
+}
+
+#madSVG>g>path {
+	stroke: var(--accent) !important;
+	stroke-opacity: 1;
+	stroke-width: 250px !important;
+	stroke-dasharray: 62000;
+	stroke-dashoffset: 62000;
+	stroke-linecap: round;
+}
+
+#lSHeaderContainer {
+	pointer-events: none;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+
+#lSHeader {
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	-webkit-filter: url(#threshold) blur(0.6px);
+	filter: url(#threshold) blur(0.6px);
+	position: relative;
+}
+
+#text1,
+#text2 {
+	color: var(--white);
+	width: 100%;
+	text-align: center;
+	-webkit-user-select: center;
+	-moz-user-select: center;
+	-ms-user-select: center;
+	user-select: center;
+	font-size: 14vw;
+	padding: 1.5vh;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	letter-spacing: 0.02em;
+}
+
+/* ANIMATIONS */
+.goUpRight {
+	transition-duration: 1.2s;
+	transition-timing-function: ease-in-out;
+	transform: translate(0, -100vh);
+}
+
+.fadeOut {
+	-webkit-animation: fadeOut 0.33s linear 1 forwards !important;
+	animation: fadeOut 0.33s linear 1 forwards !important;
+}
+
+.zoomOut {
+	-webkit-animation: zoomOut 1s ease-in-out 1 forwards;
+	animation: zoomOut 1s ease-in-out 1 forwards;
+}
+
+.blackToWhite {
+	-webkit-animation: blackToWhite 0.33s ease-in-out 1 forwards;
+	animation: blackToWhite 0.33s ease-in-out 1 forwards;
+}

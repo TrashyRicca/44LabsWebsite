@@ -1,0 +1,78 @@
+@font-face {
+	font-family: "FranklinGothicB";
+	src: url("../../fonts/FRAHV2.otf");
+}
+
+@font-face {
+	font-family: "Euclid";
+	src: url("../../fonts/Euclid.ttf");
+}
+
+@font-face {
+	font-family: "EuclidB";
+	src: url("../../fonts/EuclidB.ttf");
+}
+
+@font-face {
+	font-family: "Flexi";
+	src: url("../../fonts/Flexi.ttf");
+}
+
+#lSHeader span {
+	font-family: "FranklinGothicB";
+}
+
+h1 {
+	font-family: "FranklinGothicB";
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-family: "FranklinGothicB";
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+
+h3, h4 {
+	font-family: "EuclidB";
+	padding: 0;
+	margin: 0;
+	letter-spacing: -1px;
+}
+
+p, a {
+	font-family: "Euclid";
+	padding: 0;
+	margin: 0;
+	letter-spacing: -1px;
+}
+
+#Menu span, #Menu a{
+	font-family: "FranklinGothicB"!important;
+}
+
+.collectionsText > h2 > span{
+	font-family: "EuclidB";
+	font-weight: 900;
+}
+
+#team .name{
+	font-family: "FranklinGothicB";
+	font-weight: 400;
+}
+
+.introduction p {
+	font-family: "EuclidB";
+}
+
+.servicesIntro .textPage2 p, .servicesIntro .textPage2 p span {
+	font-family: "Flexi";
+}
+
+.infinityWrapper > p, .infinityWrapper > p > a {
+	font-family: "FranklinGothicB";
+	font-weight: 400;
+}
+

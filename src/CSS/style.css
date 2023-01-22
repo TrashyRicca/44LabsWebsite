@@ -1,0 +1,95 @@
+:root {
+	--black: #131313;
+	--black-75: rgba(19, 19, 19, 0.75);
+	--black-50: rgba(19, 19, 19, 0.5);
+	--black-25: rgba(19, 19, 19, 0.25);
+	--grey: #dcdcdc;
+	--grey-75: rgba(220, 220, 220, 0.75);
+	--grey-50: rgba(220, 220, 220, 0.5);
+	--grey-25: rgba(220, 220, 220, 0.25);
+	--white: #ffffff;
+	--white-75: rgba(255, 255, 255, 0.75);
+	--white-50: rgba(255, 255, 255, 0.5);
+	--white-25: rgba(255, 255, 255, 0.25);
+	--white-15: rgba(255, 255, 255, 0.15);
+	--accent: rgb(212, 126, 252);
+	--accent-75: rgba(212, 126, 252, 0.75);
+	--accent-50: rgba(212, 126, 252, 0.5);
+	--accent-35: rgba(212, 126, 252, 0.35);
+	--accent-25: rgba(212, 126, 252, 0.25);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	z-index: 0;
+	scroll-behavior: auto;
+}
+
+body {
+	background-color: var(--white);
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2, h3, h4, a, p{
+	color: var(--black);
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.scrollDown {
+	color: var(--black);
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	padding-bottom: 1.5em;
+	margin: 0;
+	font-size: 1.5em;
+	opacity: 0.4;
+	z-index: 1;
+}
+
+.scrollDown>img {
+	height: 1%;
+	width: 1%;
+}
+
+.scrolldownAnim, .scrollArrowPage1 {
+	animation: scrollDown 1.4s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+	0% {
+		opacity: 0.25;
+	}
+
+	50% {
+		opacity: 0.1;
+	}
+
+	100% {
+		opacity: 0.25;
+	}
+}
+
+.accent{
+	color: var(--accent);
+}

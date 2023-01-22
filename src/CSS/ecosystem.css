@@ -1,0 +1,77 @@
+#ecoContainer>img {
+    position: absolute;
+    width: 100%;
+    padding: 7.5%;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.85;
+    -webkit-filter: drop-shadow(0px 3px 10px rgba(255, 255, 0, 0.2));
+}
+
+#ecoContainer>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6em;
+    padding: 36em 22.5% 7.5em;
+}
+
+#ecoContainer .ecoItem {
+    background-image: linear-gradient(96.41deg, #121212 -0.8%, #292929 22.29%, #171717 49.3%, #252525 78%, #151515 99.39%);
+    display: flex;
+    align-items: center;
+    height: 17.5em;
+    border-radius: 40px;
+    box-shadow: 0 5px 25px var(--black-50);
+    transition-duration: 0.3s;
+}
+
+#ecoContainer .ecoItem:hover {
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+    box-shadow: 0 12px 25px var(--black-25);
+}
+
+#ecoContainer .ecoItem>img {
+    min-height: 13.5em;
+    max-height: 13.5em;
+    max-width: 13.5em;
+    min-width: 13.5em;
+    padding-left: 2em;
+    object-fit: contain;
+}
+
+#ecoContainer .ecoItem>.textContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2em;
+}
+
+#ecoContainer .ecoItem>.textContainer>h2 {
+    padding-bottom: 0.25em;
+    font-size: 3em;
+    background: linear-gradient(91.92deg, #D7A4FF 4.14%, #CA89FD 26.5%, #CF93FF 48.86%, #CA89FD 67.9%, #D49DFF 83.64%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#ecoContainer .ecoItem>.textContainer>p {
+    font-size: 1.5em;
+    color: var(--white);
+}
+
+/* BUBBLES */
+
+.bubble{
+    background: none;
+    box-shadow: none;
+    border-radius: none;
+}
+
+.bubble > img{
+    height: 250%;
+    width: 250%;
+}
