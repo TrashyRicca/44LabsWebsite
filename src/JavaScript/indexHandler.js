@@ -85,7 +85,7 @@ $(document).ready(function () {
             opacity: 0
         }, 200, function () {
             $("#collection2>h2").css({"width": "auto"});
-            $("#collection2>h2").text("IM");
+            $("#collection2>h2").text("IDM");
             $("#collection2>h2").animate({
                 opacity: 1
             }, 300, function () {
