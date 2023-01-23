@@ -1,7 +1,7 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
 	"- Dealer Lootboxes (Whitelabel)<br>- Staking Platform<br>- Raffles And Auctions<br>- Art Upgrade Platform<br>- Website Development<br>- Minting Platform<br>- more to come...");
-var iSpeed = 40; // time delay of print out
+var iSpeed = 30; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
 var iScrollAt = 20; // start scrolling up at this many lines
@@ -40,3 +40,7 @@ function typeWriter() {
 		setTimeout("typeWriter()", iSpeed);
 	}
 }
+
+$(document).ready(function() {
+	typeWriter();
+});
