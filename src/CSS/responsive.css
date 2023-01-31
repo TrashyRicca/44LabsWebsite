@@ -139,14 +139,23 @@
     /*Ecosystem*/
 
     #ecoContainer .ecoItem > img {
-        min-width: 8em;
-        max-height: 8em;
-        max-width: 8em;
-        min-height: 8em;
+        min-width: 20em;
+        max-height: 20em;
+        max-width: 20em;
+        min-height: 20em;
+        padding: 2em 0em 2em 2em;
     }
 
     #ecoContainer > div{
-        padding: 50vh 14% 10vh;
+        padding: 50vh 10% 10vh;
+    }
+
+    #ecoContainer .ecoItem>.textContainer>p{
+        font-size: 2em;
+    }
+
+    #ecoContainer .ecoItem>.textContainer>h2{
+        font-size: 5em;
     }
 }
 
@@ -209,10 +218,14 @@
     #ecoContainer .ecoItem > .textContainer{
         padding: 1.5em 1.5em 2em;
     }
+
+    #ecoContainer .ecoItem>.textContainer>p{
+        font-size: 2.25em;
+    }
     
     #ecoContainer > div{
-        gap: 4em;
-        padding: 60vh 14% 10vh;
+        gap: 5em;
+        padding: 60vh 5% 10vh;
     }
 
     #ecoContainer .ecoItem{
@@ -319,7 +332,7 @@
     }
 
     #Raffles~.serviceText>div>h2 {
-        font-size: 5vw !important;
+        font-size: 7vw !important;
     }
 
     #Dealer~.serviceText>div>h2 {
@@ -342,24 +355,28 @@
     }
 
     #ecoContainer .ecoItem > img {
-        min-width: 6em;
-        max-height: 6em;
-        max-width: 6em;
-        min-height: 6em;
-        padding: 0.75em 0em 0.75em 0.75em;
+        min-width: 30em;
+        max-height: 30em;
+        max-width: 30em;
+        min-height: 30em;
+        padding: 3em 0em 3em 3em;
     }
 
     #ecoContainer .ecoItem>.textContainer>p{
-        font-size: 0.4em;
+        font-size: 2.8em;
+    }
+
+    #ecoContainer .ecoItem>.textContainer>h2{
+        font-size: 5em;
     }
 
     #ecoContainer .ecoItem > .textContainer{
-        padding: 1em 1em 1.5em 0.75em;
+        padding: 3em 3em 4em 3em;
     }
     
     #ecoContainer > div{
-        gap: 2em;
-        padding: 24vh 14% 5vh;
+        gap: 8em;
+        padding: 25vh 5% 5vh;
     }
 
     .introduction{
@@ -390,32 +407,84 @@
         position:inherit;
     }
 
+    .imagePage1 img{
+        margin-bottom: -3px;
+    }
+
     .servicesIntro>.textPage2{
         font-size: 3vw;
+        padding: 6% 0% 6% 6%;
+        text-shadow: none;
     }
 
     .servicesIntro{
         height: auto;
+        border-radius: 15px;
     }
 
     .servicesIntro>svg{
-        right: -5vh;
+        right: -7vh;
     }
 
     .servicesIntro>.textPage2{
         width: 80%;
     }
 
-    #collectionShowcaseContainer>div{
-        height: 20vh;
+    #switch{
+        flex-direction: column;
     }
 
-    #collectionShowcaseContainer>div>h2{
-        font-size: 2.9em!important;
+    #switch > .rect {
+        width: 100%;
+        background-size: 120%;
+        background-position: top;
+        border-radius: 15px;
+    }
+
+    #switch > .rect2 { 
+        background-position: bottom;
+    }
+
+    .rect > h2{
+        font-size: 10em;
+    }
+
+    .rect:hover{
+        height: 175%;
+    }
+
+    .rectText{
+        width: 88%;
+    }
+
+    .rectText h2{
+        font-size: 7em;
+    }
+
+    .rectText p{
+        font-size: 3.4em;
+    }
+
+    .rectText a{
+        font-size: 3em;
     }
 
     #team>div>img{
         width: 22%;
         height: auto;
+    }
+
+    #team>div{
+        width: 98%;
+        justify-content: center;
+    }
+
+    #team>p>.name{
+        margin-left: -2px;
+        font-size: 5em;
+    }
+
+    #team>p>.descr{
+        font-size: 1.25em;
     }
 }

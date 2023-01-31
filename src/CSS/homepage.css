@@ -84,8 +84,8 @@ header {
 
 .servicesIntro {
 	position: relative;
-	width: 94%;
-	height: 80vh;
+	width: 90%;
+	height: 72vh;
 	-webkit-backdrop-filter: opacity(92.5%) blur(15px) brightness(3.25%) saturate(5000%) hue-rotate(10deg);
 	backdrop-filter: opacity(92.5%) blur(15px) brightness(3.25%) saturate(5000%) hue-rotate(10deg);
 	border-radius: 25px;
@@ -114,7 +114,7 @@ header {
 	padding: 6% 0% 6% 8%;
 	display: flex;
 	flex-direction: column;
-	font-size: 2.5em;
+	font-size: 2.4em;
 	z-index: 1;
 	line-height: 135%;
 	text-shadow: 0 1px 5px var(--white-50);
@@ -150,104 +150,121 @@ header {
 	filter: invert(100%);
 }
 
-.collectionsIntro {
-	width: 100%;
-	padding: 3% 3% 0 3%;
-	display: flex;
-	flex-direction: column;
+#switch {
+	padding: 4vw 0 10em 0;
+	width: 90%;
+	height: 40%;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 4vw;
 }
 
-#collectionShowcaseContainer {
-	position: relative;
-	width: 100%;
+.rect {
+	width: 0;
+	flex-grow: 1;
+	height: 100%;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	padding-bottom: 7.5em;
-}
-
-#collectionShowcaseContainer>div {
-	height: 55vh;
+	justify-content: center;
+	align-items: center;
+	transition-duration: 0.5s;
+	position: relative;
 	border-radius: 25px;
 	overflow: hidden;
-	box-shadow: inset 0 0 20px var(--black-50);
-	position: relative;
+	background-size: 80vw;
 	background-repeat: no-repeat;
-	background-size: cover;
+	box-shadow: 0px 5px 30px var(--black-25);
 }
 
-#collectionShowcaseContainer>div:first-child {
-	width: 50%;
-	margin: 0% 1.5% 0% 0%;
+.rect1 {
 	background-image: url("../../assets/subway.png");
-	background-position: 0% 0%;
+	background-position: left;
 }
 
-#collectionShowcaseContainer>div:nth-child(2) {
-	flex-grow: 1;
-	margin: 0% 0% 0% 1.5%;
+.rect2 {
 	background-image: url("../../assets/backgroundid.png");
 	background-position: top right;
 }
 
-#collectionShowcaseContainer>div>h2 {
-	position: absolute;
-	text-shadow: 0px 0px 2px var(--white);
+.rect h2 {
+	font-size: 5em;
+	opacity: 1;
+	transition-duration: 0.25s;
+	position: relative;
+	z-index: 1;
+	transition-delay: 0.25s;
 	color: var(--white);
-	font-size: 2.5em;
-	padding: 6% 8%;
 }
 
-#collectionShowcaseContainer>div>div {
-	border-radius: 25px;
+.rectText {
+	position: absolute;
+	width: 64vw;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	opacity: 0;
+	transition-duration: 0.25s;
+	transition-delay: 0s;
+}
+
+.rectText h2 {
+	font-size: 5em;
+	margin: 0px;
+	color: var(--white);
+	padding-bottom: 0.25em;
+}
+
+.rectText p {
+	font-size: 2em;
+	color: var(--white);
+}
+
+.rectText a {
+	font-size: 1.5em;
+	color: var(--white);
+}
+
+.rectText > div:not(:first-child){
+	text-align: right;
+	padding: 1em 0em;
+}
+
+.rectDark {
+	position: absolute;
 	width: 100%;
 	height: 100%;
-	-webkit-backdrop-filter: blur(0px) brightness(50%);
-	backdrop-filter: blur(0px) brightness(50%);
+	opacity: 0.4;
+	background-color: black;
+	z-index: 0;
+	transition-duration: 0.5s;
 }
 
-.collectionsText {
-	padding: 7em 0 7em 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.rect:hover {
+	width: 57vw;
+	cursor: default;
 }
 
-.collectionsIntro>.collectionsText>h2 {
-	font-size: 4.5em;
-	text-align: center;
-	width: 80%;
-	color: var(--black);
-	font-weight: 800;
-	text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-#collectionShowcaseContainer>div>p {
-	width: 90%;
-	position: absolute;
-	color: var(--white);
-	font-size: 4em;
+.rect:hover > h2 {
 	opacity: 0;
-	pointer-events: none;
+	transition-delay: 0s;
 }
 
-#collectionShowcaseContainer>div>a {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	padding: 0px 15px 10px 0px;
-	color: var(--white);
-	font-size: 1.5em;
-	opacity: 0;
+.rect:hover .rectText {
+	opacity: 1;
+	transition-delay: 0.25s;
+}
+
+.rect:hover .rectDark {
+	opacity: 0.8;
 }
 
 #team {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: flex-end;
 }
 
@@ -268,16 +285,15 @@ header {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: flex-start;
-	align-items: center;
-	height: 33%;
-	width: 100%;
+	width: 80%;
+	gap: 2.5%;
+	padding-right: 2%;
 }
 
 #team>div>img {
-	height: 35vh;
-	padding-right: 2%;
+	width: 25%;
 	transition-duration: 0.25s;
-	transform-origin: right bottom;
+	transform-origin: bottom;
 	-webkit-filter: drop-shadow(0px 0px 10px var(--accent));
 	filter: drop-shadow(0px 0px 10px var(--accent));
 }

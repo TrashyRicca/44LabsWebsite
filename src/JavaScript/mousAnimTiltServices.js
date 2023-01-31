@@ -8,7 +8,7 @@ let mousXt = 0;
 let mousYt = 0;
 
 $(document).ready(function () {
-	if (!(/^((?!chrome|android).)*safari/i.test(navigator.userAgent))) {
+	if (!(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) && !mobile.matches) {
 		document.body.addEventListener("mousemove", safeMousPost);
 		mouseTiltObjects = document.getElementsByClassName("mousAnimTilt");
 		tiltPercent = [mouseTiltObjects.length];

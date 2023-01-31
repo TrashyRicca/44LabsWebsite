@@ -8,7 +8,7 @@ let mousX = 0;
 let mousY = 0;
 
 $(document).ready(function () {
-	if (!(/^((?!chrome|android).)*safari/i.test(navigator.userAgent))) {
+	if (!(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) && !mobile.matches) {
 		document.body.addEventListener("mousemove", safeMousPos);
 		mouseMoveObjects = document.getElementsByClassName("mousAnimMove");
 		distancePercent = [mouseMoveObjects.length];
